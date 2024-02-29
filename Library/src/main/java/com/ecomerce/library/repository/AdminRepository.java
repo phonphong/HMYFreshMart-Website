@@ -9,3 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface AdminRepository extends JpaRepository<Admin, Long> {
     Admin findByUsername(String username);
 }
+public interface AdminCatagory extends JpaRepository<Admin,Double>{
+    Admin findAdminBy(String username);
+}
